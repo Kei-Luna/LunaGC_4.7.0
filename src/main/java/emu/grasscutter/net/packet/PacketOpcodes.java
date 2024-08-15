@@ -17,7 +17,7 @@ public final class PacketOpcodes {
     public static final int AvatarDataNotify = 26021;
     public static final int PlayerPropNotify = 2616;
     public static final int PlayerEnterSceneNotify = 23590;
-    public static final int GetPlayerSocialDetailReq = 1043;
+    public static final int PlayerSocialDetailReq = 1043;
     public static final int GetPlayerSocialDetailRsp = 1804;
     public static final int GetShopReq = 5877;
     public static final int GetShopRsp = 27397;
@@ -224,6 +224,7 @@ public final class PacketOpcodes {
 
     // Names
     public static final int WindSeedClientNotify = 1;
+    public static final int AvatarChangeElementTypeReq = 1;
     public static final int SceneEntityUpdateNotify = 1;
     public static final int EvtCreateGadgetNotify = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;
@@ -240,6 +241,7 @@ public final class PacketOpcodes {
     public static final int WeaponPromoteRsp = 1;
     public static final int WeaponAwakenReq = 1;
     public static final int WeaponAwakenRsp = 1;
+    public static final int AvatarChangeElementTypeRsp = 1;
     public static final int GetWidgetQuickSlotListReq = 1;
     public static final int TakePlayerLevelRewardReq = 1;
     public static final int TakePlayerLevelRewardRsp = 1;
@@ -349,8 +351,6 @@ public final class PacketOpcodes {
     public static final int AvatarCardChangeRsp = 1;
     public static final int AvatarChangeAnimHashReq = 1;
     public static final int AvatarChangeAnimHashRsp = 1;
-    public static final int AvatarChangeElementTypeReq = 1;
-    public static final int AvatarChangeElementTypeRsp = 1;
     public static final int AvatarDelNotify = 1;
     public static final int AvatarEnterElementViewNotify = 1;
     public static final int AvatarEquipAffixStartNotify = 1;
@@ -503,8 +503,6 @@ public final class PacketOpcodes {
     public static final int ChangeCustomDungeonRoomReq = 1;
     public static final int ChangeCustomDungeonRoomRsp = 1;
     public static final int ChangeMailStarNotify = 1;
-    public static final int ChangeMpTeamAvatarReq = 1;
-    public static final int ChangeMpTeamAvatarRsp = 1;
     public static final int ChangeServerGlobalValueNotify = 1;
     public static final int ChangeWidgetBackgroundActiveStateReq = 1;
     public static final int ChangeWidgetBackgroundActiveStateRsp = 1;
@@ -1077,7 +1075,11 @@ public final class PacketOpcodes {
     public static final int GetDailyDungeonEntryInfoRsp = 1;
     public static final int GetExpeditionAssistInfoListReq = 1;
     public static final int GetExpeditionAssistInfoListRsp = 1;
+    public static final int GetFriendShowReq = 1;
+    public static final int ChangeMpTeamAvatarReq = 1;
+    public static final int ChangeMpTeamAvatarRsp = 1;
     public static final int GetFriendShowAvatarInfoReq = 1;
+    public static final int GetPlayerSocialDetailReq = 1;
     public static final int GetFriendShowAvatarInfoRsp = 1;
     public static final int GetFriendShowNameCardInfoReq = 1;
     public static final int GetFurnitureCurModuleArrangeCountReq = 1;
