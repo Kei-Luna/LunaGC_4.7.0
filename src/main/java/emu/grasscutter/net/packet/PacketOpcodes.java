@@ -213,6 +213,7 @@ public final class PacketOpcodes {
     public static final int AddBackupAvatarTeamReq = 22689;
     public static final int DelBackupAvatarTeamReq = 20273;
     public static final int DelBackupAvatarTeamRsp = 5780;
+    public static final int HitTreeNotify = 2178;
 
 
 
@@ -232,7 +233,6 @@ public final class PacketOpcodes {
     public static final int EvtDestroyGadgetNotify = 1;
     public static final int EvtEntityRenderersChangedNotify = 1;
     public static final int AbilityChangeNotify = 1;
-    public static final int HitTreeNotify = 1;
     public static final int WorldPlayerLocationNotify = 1;
     public static final int ObstacleModifyNotify = 1;
     public static final int WeaponUpgradeReq = 1;
