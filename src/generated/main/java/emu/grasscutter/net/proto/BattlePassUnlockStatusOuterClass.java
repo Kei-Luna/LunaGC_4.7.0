@@ -16,8 +16,7 @@ public final class BattlePassUnlockStatusOuterClass {
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * Obfs: LKNMHOGNENB
+   *4.7.0
    * </pre>
    *
    * Protobuf enum {@code BattlePassUnlockStatus}

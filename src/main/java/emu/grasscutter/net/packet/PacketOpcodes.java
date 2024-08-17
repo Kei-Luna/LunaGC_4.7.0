@@ -216,6 +216,7 @@ public final class PacketOpcodes {
     public static final int HitTreeNotify = 2178;
     public static final int AchievementAllDataNotify = 7450;
     public static final int AchievementUpdateNotify = 27625;
+    public static final int BattlePassAllDataNotify = 2963;
 
 
 
@@ -430,7 +431,6 @@ public final class PacketOpcodes {
     public static final int BartenderStartLevelRsp = 1;
     public static final int BatchBuyGoodsReq = 1;
     public static final int BatchBuyGoodsRsp = 1;
-    public static final int BattlePassAllDataNotify = 1;
     public static final int BattlePassBuySuccNotify = 1;
     public static final int BattlePassCurScheduleUpdateNotify = 1;
     public static final int BattlePassMissionDelNotify = 1;
