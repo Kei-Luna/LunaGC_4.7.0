@@ -214,6 +214,8 @@ public final class PacketOpcodes {
     public static final int DelBackupAvatarTeamReq = 20273;
     public static final int DelBackupAvatarTeamRsp = 5780;
     public static final int HitTreeNotify = 2178;
+    public static final int AchievementAllDataNotify = 7450;
+    public static final int AchievementUpdateNotify = 27625;
 
 
 
@@ -225,6 +227,7 @@ public final class PacketOpcodes {
 
     // Names
     public static final int WindSeedClientNotify = 1;
+    public static final int TakeAchievementGoalRewardRsp = 1;
     public static final int AvatarChangeElementTypeReq = 1;
     public static final int SceneEntityUpdateNotify = 1;
     public static final int EvtCreateGadgetNotify = 1;
@@ -269,8 +272,6 @@ public final class PacketOpcodes {
     public static final int AbilityInvocationFailNotify = 1;
     public static final int AcceptCityReputationRequestReq = 1;
     public static final int AcceptCityReputationRequestRsp = 1;
-    public static final int AchievementAllDataNotify = 1;
-    public static final int AchievementUpdateNotify = 1;
     public static final int ActivityAcceptAllGiveGiftReq = 1;
     public static final int ActivityAcceptAllGiveGiftRsp = 1;
     public static final int ActivityAcceptGiveGiftReq = 1;
@@ -1957,7 +1958,6 @@ public final class PacketOpcodes {
     public static final int SumoSwitchTeamReq = 1;
     public static final int SumoSwitchTeamRsp = 1;
     public static final int TakeAchievementGoalRewardReq = 1;
-    public static final int TakeAchievementGoalRewardRsp = 1;
     public static final int TakeAchievementRewardReq = 1;
     public static final int TakeAchievementRewardRsp = 1;
     public static final int TakeAsterSpecialRewardReq = 1;
