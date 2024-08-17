@@ -217,6 +217,16 @@ public final class PacketOpcodes {
     public static final int AchievementAllDataNotify = 7450;
     public static final int AchievementUpdateNotify = 27625;
     public static final int BattlePassAllDataNotify = 2963;
+    public static final int BattlePassMissionUpdateNotify = 21651;
+    public static final int BattlePassCurScheduleUpdateNotify = 23013;
+    public static final int SetBattlePassViewedReq = 4006;
+    public static final int TakeBattlePassMissionPointReq = 20564;
+    public static final int TakeBattlePassMissionPointRsp = 1667;
+    public static final int TakeBattlePassRewardReq = 27855;
+    public static final int TakeBattlePassRewardRsp = 3069;
+    public static final int BuyBattlePassLevelReq = 1825;
+    public static final int BuyBattlePassLevelRsp = 21428;
+
 
 
 
@@ -231,6 +241,7 @@ public final class PacketOpcodes {
     public static final int TakeAchievementGoalRewardRsp = 1;
     public static final int AvatarChangeElementTypeReq = 1;
     public static final int SceneEntityUpdateNotify = 1;
+    public static final int SetBattlePassViewedRsp = 1;
     public static final int EvtCreateGadgetNotify = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;
     public static final int EvtAiSyncSkillCdNotify = 1;
@@ -432,9 +443,7 @@ public final class PacketOpcodes {
     public static final int BatchBuyGoodsReq = 1;
     public static final int BatchBuyGoodsRsp = 1;
     public static final int BattlePassBuySuccNotify = 1;
-    public static final int BattlePassCurScheduleUpdateNotify = 1;
     public static final int BattlePassMissionDelNotify = 1;
-    public static final int BattlePassMissionUpdateNotify = 1;
     public static final int BeginCameraSceneLookNotify = 1;
     public static final int BeginCameraSceneLookWithTemplateNotify = 1;
     public static final int BigTalentPointConvertReq = 1;
@@ -482,8 +491,6 @@ public final class PacketOpcodes {
     public static final int BrickBreakerTwiceStartReq = 1;
     public static final int BrickBreakerTwiceStartRsp = 1;
     public static final int BuoyantCombatSettleNotify = 1;
-    public static final int BuyBattlePassLevelReq = 1;
-    public static final int BuyBattlePassLevelRsp = 1;
     public static final int BuyGoodsReq = 1;
     public static final int BuyGoodsRsp = 1;
     public static final int BuyResinReq = 1;
@@ -1860,8 +1867,6 @@ public final class PacketOpcodes {
     public static final int ServerTimeNotify = 1;
     public static final int ServerTryCancelGeneralMatchNotify = 1;
     public static final int ServerUpdateGlobalValueNotify = 1;
-    public static final int SetBattlePassViewedReq = 1;
-    public static final int SetBattlePassViewedRsp = 1;
     public static final int SetChatEmojiCollectionReq = 1;
     public static final int SetChatEmojiCollectionRsp = 1;
     public static final int SetCodexPushtipsReadReq = 1;
@@ -1964,10 +1969,6 @@ public final class PacketOpcodes {
     public static final int TakeAsterSpecialRewardRsp = 1;
     public static final int TakeBackGivingItemReq = 1;
     public static final int TakeBackGivingItemRsp = 1;
-    public static final int TakeBattlePassMissionPointReq = 1;
-    public static final int TakeBattlePassMissionPointRsp = 1;
-    public static final int TakeBattlePassRewardReq = 1;
-    public static final int TakeBattlePassRewardRsp = 1;
     public static final int TakeCityReputationExploreRewardReq = 1;
     public static final int TakeCityReputationExploreRewardRsp = 1;
     public static final int TakeCityReputationLevelRewardReq = 1;
