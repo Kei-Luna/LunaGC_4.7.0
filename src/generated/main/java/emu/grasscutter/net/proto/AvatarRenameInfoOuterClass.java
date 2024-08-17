@@ -38,7 +38,7 @@ public final class AvatarRenameInfoOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code AvatarRenameInfo}
@@ -345,7 +345,7 @@ public final class AvatarRenameInfoOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code AvatarRenameInfo}

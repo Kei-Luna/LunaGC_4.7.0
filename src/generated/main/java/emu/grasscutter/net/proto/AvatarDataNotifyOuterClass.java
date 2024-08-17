@@ -200,7 +200,6 @@ public final class AvatarDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
    * CmdId: 26021
    * </pre>
    *
@@ -951,7 +950,6 @@ public final class AvatarDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
      * CmdId: 26021
      * </pre>
      *

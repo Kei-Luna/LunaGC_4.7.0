@@ -49,7 +49,7 @@ public final class AvatarTeamOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code AvatarTeam}
@@ -411,7 +411,7 @@ public final class AvatarTeamOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code AvatarTeam}
