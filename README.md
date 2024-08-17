@@ -155,7 +155,7 @@ Method 2:
 - Serenitea pot
 - Abyss
 - Mail
-- Battlepass
+- Battlepass (mostly works)
 - Events
 - Claiming AR/Commission rewards
 - Claiming bosses drops
