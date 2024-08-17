@@ -226,6 +226,13 @@ public final class PacketOpcodes {
     public static final int TakeBattlePassRewardRsp = 3069;
     public static final int BuyBattlePassLevelReq = 1825;
     public static final int BuyBattlePassLevelRsp = 21428;
+    public static final int GetAllMailNotify = 8385;
+    public static final int GetAllMailReq = 27885;
+    public static final int GetAllMailRsp = 565;
+    public static final int GetAllMailResultNotify = 20380;
+    public static final int ChangeMailStarNotify = 22223;
+    public static final int PlayerEnterDungeonReq = 21509;
+    public static final int PlayerEnterDungeonRsp = 29982;
 
 
 
@@ -262,8 +269,6 @@ public final class PacketOpcodes {
     public static final int TakePlayerLevelRewardRsp = 1;
     public static final int AvatarGainCostumeNotify = 1;
     public static final int AvatarGainFlycloakNotify = 1;
-    public static final int PlayerEnterDungeonReq = 1;
-    public static final int PlayerEnterDungeonRsp = 1;
     public static final int SelectWorktopOptionReq = 1;
     public static final int SelectWorktopOptionRsp = 1;
     public static final int PlayerQuitDungeonReq = 1;
@@ -510,7 +515,6 @@ public final class PacketOpcodes {
     public static final int ChallengeRecordNotify = 1;
     public static final int ChangeCustomDungeonRoomReq = 1;
     public static final int ChangeCustomDungeonRoomRsp = 1;
-    public static final int ChangeMailStarNotify = 1;
     public static final int ChangeServerGlobalValueNotify = 1;
     public static final int ChangeWidgetBackgroundActiveStateReq = 1;
     public static final int ChangeWidgetBackgroundActiveStateRsp = 1;
@@ -1048,10 +1052,6 @@ public final class PacketOpcodes {
     public static final int GetAllActivatedBargainDataRsp = 1;
     public static final int GetAllH5ActivityInfoReq = 1;
     public static final int GetAllH5ActivityInfoRsp = 1;
-    public static final int GetAllMailNotify = 1;
-    public static final int GetAllMailReq = 1;
-    public static final int GetAllMailResultNotify = 1;
-    public static final int GetAllMailRsp = 1;
     public static final int GetAllSceneGalleryInfoReq = 1;
     public static final int GetAllSceneGalleryInfoRsp = 1;
     public static final int GetAreaExplorePointReq = 1;

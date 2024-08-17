@@ -55,6 +55,10 @@ public final class MailTextContentOuterClass {
         getSenderBytes();
   }
   /**
+   * <pre>
+   *4.7.0
+   * </pre>
+   *
    * Protobuf type {@code MailTextContent}
    */
   public static final class MailTextContent extends
@@ -441,6 +445,10 @@ public final class MailTextContentOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     *4.7.0
+     * </pre>
+     *
      * Protobuf type {@code MailTextContent}
      */
     public static final class Builder extends

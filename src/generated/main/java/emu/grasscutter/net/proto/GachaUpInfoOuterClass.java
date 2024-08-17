@@ -19,23 +19,23 @@ public final class GachaUpInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_parent_type = 1;</code>
+     * <code>uint32 item_parent_type = 5;</code>
      * @return The itemParentType.
      */
     int getItemParentType();
 
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @return A list containing the itemIdList.
      */
     java.util.List<java.lang.Integer> getItemIdListList();
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @return The count of itemIdList.
      */
     int getItemIdListCount();
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -43,8 +43,7 @@ public final class GachaUpInfoOuterClass {
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * Obfs: ???
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code GachaUpInfo}
@@ -93,12 +92,12 @@ public final class GachaUpInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               itemParentType_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +105,7 @@ public final class GachaUpInfoOuterClass {
               itemIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,10 +153,10 @@ public final class GachaUpInfoOuterClass {
               emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.class, emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo.Builder.class);
     }
 
-    public static final int ITEM_PARENT_TYPE_FIELD_NUMBER = 1;
+    public static final int ITEM_PARENT_TYPE_FIELD_NUMBER = 5;
     private int itemParentType_;
     /**
-     * <code>uint32 item_parent_type = 1;</code>
+     * <code>uint32 item_parent_type = 5;</code>
      * @return The itemParentType.
      */
     @java.lang.Override
@@ -165,10 +164,10 @@ public final class GachaUpInfoOuterClass {
       return itemParentType_;
     }
 
-    public static final int ITEM_ID_LIST_FIELD_NUMBER = 9;
+    public static final int ITEM_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList itemIdList_;
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @return A list containing the itemIdList.
      */
     @java.lang.Override
@@ -177,14 +176,14 @@ public final class GachaUpInfoOuterClass {
       return itemIdList_;
     }
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @return The count of itemIdList.
      */
     public int getItemIdListCount() {
       return itemIdList_.size();
     }
     /**
-     * <code>repeated uint32 item_id_list = 9;</code>
+     * <code>repeated uint32 item_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -209,10 +208,10 @@ public final class GachaUpInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (itemParentType_ != 0) {
-        output.writeUInt32(1, itemParentType_);
+        output.writeUInt32(5, itemParentType_);
       }
       if (getItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(itemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < itemIdList_.size(); i++) {
@@ -229,7 +228,7 @@ public final class GachaUpInfoOuterClass {
       size = 0;
       if (itemParentType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, itemParentType_);
+          .computeUInt32Size(5, itemParentType_);
       }
       {
         int dataSize = 0;
@@ -378,8 +377,7 @@ public final class GachaUpInfoOuterClass {
     }
     /**
      * <pre>
-     * Version: 4.6.0
-     * Obfs: ???
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code GachaUpInfo}
@@ -549,7 +547,7 @@ public final class GachaUpInfoOuterClass {
 
       private int itemParentType_ ;
       /**
-       * <code>uint32 item_parent_type = 1;</code>
+       * <code>uint32 item_parent_type = 5;</code>
        * @return The itemParentType.
        */
       @java.lang.Override
@@ -557,7 +555,7 @@ public final class GachaUpInfoOuterClass {
         return itemParentType_;
       }
       /**
-       * <code>uint32 item_parent_type = 1;</code>
+       * <code>uint32 item_parent_type = 5;</code>
        * @param value The itemParentType to set.
        * @return This builder for chaining.
        */
@@ -568,7 +566,7 @@ public final class GachaUpInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_parent_type = 1;</code>
+       * <code>uint32 item_parent_type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemParentType() {
@@ -586,7 +584,7 @@ public final class GachaUpInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @return A list containing the itemIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -595,14 +593,14 @@ public final class GachaUpInfoOuterClass {
                  java.util.Collections.unmodifiableList(itemIdList_) : itemIdList_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @return The count of itemIdList.
        */
       public int getItemIdListCount() {
         return itemIdList_.size();
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The itemIdList at the given index.
        */
@@ -610,7 +608,7 @@ public final class GachaUpInfoOuterClass {
         return itemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The itemIdList to set.
        * @return This builder for chaining.
@@ -623,7 +621,7 @@ public final class GachaUpInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @param value The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -634,7 +632,7 @@ public final class GachaUpInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @param values The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -647,7 +645,7 @@ public final class GachaUpInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 9;</code>
+       * <code>repeated uint32 item_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemIdList() {
@@ -724,7 +722,7 @@ public final class GachaUpInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021GachaUpInfo.proto\"=\n\013GachaUpInfo\022\030\n\020it" +
-      "em_parent_type\030\001 \001(\r\022\024\n\014item_id_list\030\t \003" +
+      "em_parent_type\030\005 \001(\r\022\024\n\014item_id_list\030\017 \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
