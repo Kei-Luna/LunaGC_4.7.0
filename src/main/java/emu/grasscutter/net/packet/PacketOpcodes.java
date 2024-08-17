@@ -233,6 +233,9 @@ public final class PacketOpcodes {
     public static final int ChangeMailStarNotify = 22223;
     public static final int PlayerEnterDungeonReq = 21509;
     public static final int PlayerEnterDungeonRsp = 29982;
+    public static final int PlayerQuitDungeonReq = 4653;
+    public static final int PlayerQuitDungeonRsp = 29245;
+    public static final int DungeonChallengeBeginNotify = 4649;
 
 
 
@@ -271,8 +274,6 @@ public final class PacketOpcodes {
     public static final int AvatarGainFlycloakNotify = 1;
     public static final int SelectWorktopOptionReq = 1;
     public static final int SelectWorktopOptionRsp = 1;
-    public static final int PlayerQuitDungeonReq = 1;
-    public static final int DungeonChallengeBeginNotify = 1;
     public static final int DungeonChallengeFinishNotify = 1;
     public static final int DungeonDieOptionReq = 1;
     public static final int DungeonDieOptionRsp = 1;
@@ -1621,7 +1622,6 @@ public final class PacketOpcodes {
     public static final int PlayerOfferingReq = 1;
     public static final int PlayerOfferingRsp = 1;
     public static final int PlayerPreEnterMpNotify = 1;
-    public static final int PlayerQuitDungeonRsp = 1;
     public static final int PlayerQuitFromHomeNotify = 1;
     public static final int PlayerQuitFromMpNotify = 1;
     public static final int PlayerRandomCookReq = 1;
