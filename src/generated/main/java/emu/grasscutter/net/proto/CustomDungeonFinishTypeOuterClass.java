@@ -16,7 +16,7 @@ public final class CustomDungeonFinishTypeOuterClass {
   }
   /**
    * <pre>
-   * Version: 4.6.0
+   *4.7.0
    * </pre>
    *
    * Protobuf enum {@code CustomDungeonFinishType}

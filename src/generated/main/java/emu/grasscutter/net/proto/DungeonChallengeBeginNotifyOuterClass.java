@@ -19,6 +19,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <pre>
+     *idk
+     * </pre>
+     *
      * <code>uint32 father_index = 2;</code>
      * @return The fatherIndex.
      */
@@ -59,6 +63,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
     int getUidList(int index);
 
     /**
+     * <pre>
+     *idk
+     * </pre>
+     *
      * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
@@ -232,6 +240,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
     public static final int FATHER_INDEX_FIELD_NUMBER = 2;
     private int fatherIndex_;
     /**
+     * <pre>
+     *idk
+     * </pre>
+     *
      * <code>uint32 father_index = 2;</code>
      * @return The fatherIndex.
      */
@@ -299,6 +311,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
     public static final int CHALLENGE_ID_FIELD_NUMBER = 10;
     private int challengeId_;
     /**
+     * <pre>
+     *idk
+     * </pre>
+     *
      * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
@@ -780,6 +796,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
 
       private int fatherIndex_ ;
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 father_index = 2;</code>
        * @return The fatherIndex.
        */
@@ -788,6 +808,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
         return fatherIndex_;
       }
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 father_index = 2;</code>
        * @param value The fatherIndex to set.
        * @return This builder for chaining.
@@ -799,6 +823,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 father_index = 2;</code>
        * @return This builder for chaining.
        */
@@ -969,6 +997,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
 
       private int challengeId_ ;
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 challenge_id = 10;</code>
        * @return The challengeId.
        */
@@ -977,6 +1009,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
         return challengeId_;
       }
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 challenge_id = 10;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
@@ -988,6 +1024,10 @@ public final class DungeonChallengeBeginNotifyOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *idk
+       * </pre>
+       *
        * <code>uint32 challenge_id = 10;</code>
        * @return This builder for chaining.
        */

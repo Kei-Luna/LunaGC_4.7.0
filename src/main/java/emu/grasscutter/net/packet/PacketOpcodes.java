@@ -144,7 +144,7 @@ public final class PacketOpcodes {
     public static final int EvtAvatarStandUpNotify = 29783;
     public static final int MarkMapRsp = 23656;
     public static final int EvtAiSyncCombatThreatInfoNotify = 2682;
-    public static final int UNKNOWN2 = 24710;
+    public static final int EntityAiSyncNotify = 24710;
     public static final int SetEntityClientDataNotify = 28968;
     public static final int HomeAvatarTalkReq = 29305;
     public static final int NpcTalkReq = 21148;
@@ -169,6 +169,7 @@ public final class PacketOpcodes {
     public static final int UpdatePlayerShowNameCardListRsp = 2205;
     public static final int WorldPlayerReviveReq = 5872;
     public static final int EntityFightPropChangeReasonNotify = 26911;
+    public static final int EntityFightPropNotify = 20736;
     public static final int PlayerPropChangeNotify = 29322;
     public static final int PlayerPropChangeReasonNotify = 21300;
     public static final int AvatarPropChangeReasonNotify = 21300;
@@ -236,6 +237,8 @@ public final class PacketOpcodes {
     public static final int PlayerQuitDungeonReq = 4653;
     public static final int PlayerQuitDungeonRsp = 29245;
     public static final int DungeonChallengeBeginNotify = 4649;
+    public static final int EvtBeingHitNotify = 6997;
+    public static final int EvtAiSyncSkillCdNotify = 23435;
 
 
 
@@ -254,7 +257,6 @@ public final class PacketOpcodes {
     public static final int SetBattlePassViewedRsp = 1;
     public static final int EvtCreateGadgetNotify = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;
-    public static final int EvtAiSyncSkillCdNotify = 1;
     public static final int EvtDestroyGadgetNotify = 1;
     public static final int EvtEntityRenderersChangedNotify = 1;
     public static final int AbilityChangeNotify = 1;
@@ -277,7 +279,6 @@ public final class PacketOpcodes {
     public static final int DungeonChallengeFinishNotify = 1;
     public static final int DungeonDieOptionReq = 1;
     public static final int DungeonDieOptionRsp = 1;
-    public static final int EntityAiSyncNotify = 1;
     public static final int ServerAnnounceNotify = 1;
     public static final int DungeonEntryToBeExploreNotify = 1;
     public static final int GetDungeonEntryExploreConditionReq = 1;
@@ -778,7 +779,6 @@ public final class PacketOpcodes {
     public static final int EntityAiKillSelfNotify = 1;
     public static final int EntityAuthorityChangeNotify = 1;
     public static final int EntityConfigHashNotify = 1;
-    public static final int EntityFightPropNotify = 1;
     public static final int EntityForceSyncReq = 1;
     public static final int EntityForceSyncRsp = 1;
     public static final int EntityJumpNotify = 1;
@@ -793,7 +793,6 @@ public final class PacketOpcodes {
     public static final int EvtAvatarSitDownNotify = 1;
     public static final int EvtAvatarUpdateFocusNotify = 1;
     public static final int EvtBeingHealedNotify = 1;
-    public static final int EvtBeingHitNotify = 1;
     public static final int EvtBeingHitsCombineNotify = 1;
     public static final int EvtBulletDeactiveNotify = 1;
     public static final int EvtBulletHitNotify = 1;

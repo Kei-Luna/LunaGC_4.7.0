@@ -91,8 +91,8 @@ public final class LifeStateChangeNotifyOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
    * CmdId: 9435
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code LifeStateChangeNotify}
@@ -583,8 +583,8 @@ public final class LifeStateChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
      * CmdId: 9435
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code LifeStateChangeNotify}
