@@ -19,13 +19,13 @@ public final class DungeonEntryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 next_refresh_time = 4;</code>
-     * @return The nextRefreshTime.
+     * <code>bool is_passed = 2;</code>
+     * @return The isPassed.
      */
-    int getNextRefreshTime();
+    boolean getIsPassed();
 
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
@@ -46,27 +46,26 @@ public final class DungeonEntryInfoOuterClass {
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder();
 
     /**
-     * <code>uint32 left_times = 8;</code>
-     * @return The leftTimes.
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
      */
-    int getLeftTimes();
+    int getNextRefreshTime();
 
     /**
-     * <code>bool is_passed = 14;</code>
-     * @return The isPassed.
-     */
-    boolean getIsPassed();
-
-    /**
-     * <code>uint32 max_boss_chest_num = 15;</code>
+     * <code>uint32 max_boss_chest_num = 12;</code>
      * @return The maxBossChestNum.
      */
     int getMaxBossChestNum();
+
+    /**
+     * <code>uint32 left_times = 14;</code>
+     * @return The leftTimes.
+     */
+    int getLeftTimes();
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * Obfs: IPAMCDBKCOB
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code DungeonEntryInfo}
@@ -113,12 +112,12 @@ public final class DungeonEntryInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              nextRefreshTime_ = input.readUInt32();
+              isPassed_ = input.readBool();
               break;
             }
-            case 40: {
+            case 32: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -136,19 +135,19 @@ public final class DungeonEntryInfoOuterClass {
 
               break;
             }
-            case 64: {
+            case 80: {
 
-              leftTimes_ = input.readUInt32();
+              nextRefreshTime_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              maxBossChestNum_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              isPassed_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              maxBossChestNum_ = input.readUInt32();
+              leftTimes_ = input.readUInt32();
               break;
             }
             default: {
@@ -183,21 +182,21 @@ public final class DungeonEntryInfoOuterClass {
               emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.class, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder.class);
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 4;
-    private int nextRefreshTime_;
+    public static final int IS_PASSED_FIELD_NUMBER = 2;
+    private boolean isPassed_;
     /**
-     * <code>uint32 next_refresh_time = 4;</code>
-     * @return The nextRefreshTime.
+     * <code>bool is_passed = 2;</code>
+     * @return The isPassed.
      */
     @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
+    public boolean getIsPassed() {
+      return isPassed_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 4;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -231,37 +230,37 @@ public final class DungeonEntryInfoOuterClass {
       return getWeeklyBossResinDiscountInfo();
     }
 
-    public static final int LEFT_TIMES_FIELD_NUMBER = 8;
-    private int leftTimes_;
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 10;
+    private int nextRefreshTime_;
     /**
-     * <code>uint32 left_times = 8;</code>
-     * @return The leftTimes.
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
      */
     @java.lang.Override
-    public int getLeftTimes() {
-      return leftTimes_;
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
     }
 
-    public static final int IS_PASSED_FIELD_NUMBER = 14;
-    private boolean isPassed_;
-    /**
-     * <code>bool is_passed = 14;</code>
-     * @return The isPassed.
-     */
-    @java.lang.Override
-    public boolean getIsPassed() {
-      return isPassed_;
-    }
-
-    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 15;
+    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 12;
     private int maxBossChestNum_;
     /**
-     * <code>uint32 max_boss_chest_num = 15;</code>
+     * <code>uint32 max_boss_chest_num = 12;</code>
      * @return The maxBossChestNum.
      */
     @java.lang.Override
     public int getMaxBossChestNum() {
       return maxBossChestNum_;
+    }
+
+    public static final int LEFT_TIMES_FIELD_NUMBER = 14;
+    private int leftTimes_;
+    /**
+     * <code>uint32 left_times = 14;</code>
+     * @return The leftTimes.
+     */
+    @java.lang.Override
+    public int getLeftTimes() {
+      return leftTimes_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -278,23 +277,23 @@ public final class DungeonEntryInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(4, nextRefreshTime_);
+      if (isPassed_ != false) {
+        output.writeBool(2, isPassed_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(5, dungeonId_);
+        output.writeUInt32(4, dungeonId_);
       }
       if (weeklyBossResinDiscountInfo_ != null) {
         output.writeMessage(7, getWeeklyBossResinDiscountInfo());
       }
-      if (leftTimes_ != 0) {
-        output.writeUInt32(8, leftTimes_);
-      }
-      if (isPassed_ != false) {
-        output.writeBool(14, isPassed_);
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(10, nextRefreshTime_);
       }
       if (maxBossChestNum_ != 0) {
-        output.writeUInt32(15, maxBossChestNum_);
+        output.writeUInt32(12, maxBossChestNum_);
+      }
+      if (leftTimes_ != 0) {
+        output.writeUInt32(14, leftTimes_);
       }
       unknownFields.writeTo(output);
     }
@@ -305,29 +304,29 @@ public final class DungeonEntryInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nextRefreshTime_ != 0) {
+      if (isPassed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, nextRefreshTime_);
+          .computeBoolSize(2, isPassed_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonId_);
+          .computeUInt32Size(4, dungeonId_);
       }
       if (weeklyBossResinDiscountInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getWeeklyBossResinDiscountInfo());
       }
-      if (leftTimes_ != 0) {
+      if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, leftTimes_);
-      }
-      if (isPassed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isPassed_);
+          .computeUInt32Size(10, nextRefreshTime_);
       }
       if (maxBossChestNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, maxBossChestNum_);
+          .computeUInt32Size(12, maxBossChestNum_);
+      }
+      if (leftTimes_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, leftTimes_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,8 +343,8 @@ public final class DungeonEntryInfoOuterClass {
       }
       emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo other = (emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo) obj;
 
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
+      if (getIsPassed()
+          != other.getIsPassed()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (hasWeeklyBossResinDiscountInfo() != other.hasWeeklyBossResinDiscountInfo()) return false;
@@ -353,12 +352,12 @@ public final class DungeonEntryInfoOuterClass {
         if (!getWeeklyBossResinDiscountInfo()
             .equals(other.getWeeklyBossResinDiscountInfo())) return false;
       }
-      if (getLeftTimes()
-          != other.getLeftTimes()) return false;
-      if (getIsPassed()
-          != other.getIsPassed()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
       if (getMaxBossChestNum()
           != other.getMaxBossChestNum()) return false;
+      if (getLeftTimes()
+          != other.getLeftTimes()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -370,21 +369,21 @@ public final class DungeonEntryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPassed());
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       if (hasWeeklyBossResinDiscountInfo()) {
         hash = (37 * hash) + WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getWeeklyBossResinDiscountInfo().hashCode();
       }
-      hash = (37 * hash) + LEFT_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftTimes();
-      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPassed());
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
       hash = (37 * hash) + MAX_BOSS_CHEST_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getMaxBossChestNum();
+      hash = (37 * hash) + LEFT_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftTimes();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -482,8 +481,7 @@ public final class DungeonEntryInfoOuterClass {
     }
     /**
      * <pre>
-     * Version: 4.6.0
-     * Obfs: IPAMCDBKCOB
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code DungeonEntryInfo}
@@ -523,7 +521,7 @@ public final class DungeonEntryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nextRefreshTime_ = 0;
+        isPassed_ = false;
 
         dungeonId_ = 0;
 
@@ -533,11 +531,11 @@ public final class DungeonEntryInfoOuterClass {
           weeklyBossResinDiscountInfo_ = null;
           weeklyBossResinDiscountInfoBuilder_ = null;
         }
-        leftTimes_ = 0;
-
-        isPassed_ = false;
+        nextRefreshTime_ = 0;
 
         maxBossChestNum_ = 0;
+
+        leftTimes_ = 0;
 
         return this;
       }
@@ -565,16 +563,16 @@ public final class DungeonEntryInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo buildPartial() {
         emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo result = new emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo(this);
-        result.nextRefreshTime_ = nextRefreshTime_;
+        result.isPassed_ = isPassed_;
         result.dungeonId_ = dungeonId_;
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
           result.weeklyBossResinDiscountInfo_ = weeklyBossResinDiscountInfo_;
         } else {
           result.weeklyBossResinDiscountInfo_ = weeklyBossResinDiscountInfoBuilder_.build();
         }
-        result.leftTimes_ = leftTimes_;
-        result.isPassed_ = isPassed_;
+        result.nextRefreshTime_ = nextRefreshTime_;
         result.maxBossChestNum_ = maxBossChestNum_;
+        result.leftTimes_ = leftTimes_;
         onBuilt();
         return result;
       }
@@ -623,8 +621,8 @@ public final class DungeonEntryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo other) {
         if (other == emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.getDefaultInstance()) return this;
-        if (other.getNextRefreshTime() != 0) {
-          setNextRefreshTime(other.getNextRefreshTime());
+        if (other.getIsPassed() != false) {
+          setIsPassed(other.getIsPassed());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
@@ -632,14 +630,14 @@ public final class DungeonEntryInfoOuterClass {
         if (other.hasWeeklyBossResinDiscountInfo()) {
           mergeWeeklyBossResinDiscountInfo(other.getWeeklyBossResinDiscountInfo());
         }
-        if (other.getLeftTimes() != 0) {
-          setLeftTimes(other.getLeftTimes());
-        }
-        if (other.getIsPassed() != false) {
-          setIsPassed(other.getIsPassed());
+        if (other.getNextRefreshTime() != 0) {
+          setNextRefreshTime(other.getNextRefreshTime());
         }
         if (other.getMaxBossChestNum() != 0) {
           setMaxBossChestNum(other.getMaxBossChestNum());
+        }
+        if (other.getLeftTimes() != 0) {
+          setLeftTimes(other.getLeftTimes());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -670,40 +668,40 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
 
-      private int nextRefreshTime_ ;
+      private boolean isPassed_ ;
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
-       * @return The nextRefreshTime.
+       * <code>bool is_passed = 2;</code>
+       * @return The isPassed.
        */
       @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
+      public boolean getIsPassed() {
+        return isPassed_;
       }
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
-       * @param value The nextRefreshTime to set.
+       * <code>bool is_passed = 2;</code>
+       * @param value The isPassed to set.
        * @return This builder for chaining.
        */
-      public Builder setNextRefreshTime(int value) {
+      public Builder setIsPassed(boolean value) {
         
-        nextRefreshTime_ = value;
+        isPassed_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 next_refresh_time = 4;</code>
+       * <code>bool is_passed = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNextRefreshTime() {
+      public Builder clearIsPassed() {
         
-        nextRefreshTime_ = 0;
+        isPassed_ = false;
         onChanged();
         return this;
       }
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -711,7 +709,7 @@ public final class DungeonEntryInfoOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -722,7 +720,7 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -851,71 +849,40 @@ public final class DungeonEntryInfoOuterClass {
         return weeklyBossResinDiscountInfoBuilder_;
       }
 
-      private int leftTimes_ ;
+      private int nextRefreshTime_ ;
       /**
-       * <code>uint32 left_times = 8;</code>
-       * @return The leftTimes.
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return The nextRefreshTime.
        */
       @java.lang.Override
-      public int getLeftTimes() {
-        return leftTimes_;
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
       }
       /**
-       * <code>uint32 left_times = 8;</code>
-       * @param value The leftTimes to set.
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
-      public Builder setLeftTimes(int value) {
+      public Builder setNextRefreshTime(int value) {
         
-        leftTimes_ = value;
+        nextRefreshTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 left_times = 8;</code>
+       * <code>uint32 next_refresh_time = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLeftTimes() {
+      public Builder clearNextRefreshTime() {
         
-        leftTimes_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPassed_ ;
-      /**
-       * <code>bool is_passed = 14;</code>
-       * @return The isPassed.
-       */
-      @java.lang.Override
-      public boolean getIsPassed() {
-        return isPassed_;
-      }
-      /**
-       * <code>bool is_passed = 14;</code>
-       * @param value The isPassed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPassed(boolean value) {
-        
-        isPassed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_passed = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPassed() {
-        
-        isPassed_ = false;
+        nextRefreshTime_ = 0;
         onChanged();
         return this;
       }
 
       private int maxBossChestNum_ ;
       /**
-       * <code>uint32 max_boss_chest_num = 15;</code>
+       * <code>uint32 max_boss_chest_num = 12;</code>
        * @return The maxBossChestNum.
        */
       @java.lang.Override
@@ -923,7 +890,7 @@ public final class DungeonEntryInfoOuterClass {
         return maxBossChestNum_;
       }
       /**
-       * <code>uint32 max_boss_chest_num = 15;</code>
+       * <code>uint32 max_boss_chest_num = 12;</code>
        * @param value The maxBossChestNum to set.
        * @return This builder for chaining.
        */
@@ -934,12 +901,43 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_boss_chest_num = 15;</code>
+       * <code>uint32 max_boss_chest_num = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxBossChestNum() {
         
         maxBossChestNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int leftTimes_ ;
+      /**
+       * <code>uint32 left_times = 14;</code>
+       * @return The leftTimes.
+       */
+      @java.lang.Override
+      public int getLeftTimes() {
+        return leftTimes_;
+      }
+      /**
+       * <code>uint32 left_times = 14;</code>
+       * @param value The leftTimes to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLeftTimes(int value) {
+        
+        leftTimes_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 left_times = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLeftTimes() {
+        
+        leftTimes_ = 0;
         onChanged();
         return this;
       }
@@ -1012,11 +1010,11 @@ public final class DungeonEntryInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026DungeonEntryInfo.proto\032!WeeklyBossResi" +
       "nDiscountInfo.proto\"\313\001\n\020DungeonEntryInfo" +
-      "\022\031\n\021next_refresh_time\030\004 \001(\r\022\022\n\ndungeon_i" +
-      "d\030\005 \001(\r\022E\n\037weekly_boss_resin_discount_in" +
-      "fo\030\007 \001(\0132\034.WeeklyBossResinDiscountInfo\022\022" +
-      "\n\nleft_times\030\010 \001(\r\022\021\n\tis_passed\030\016 \001(\010\022\032\n" +
-      "\022max_boss_chest_num\030\017 \001(\rB\033\n\031emu.grasscu" +
+      "\022\021\n\tis_passed\030\002 \001(\010\022\022\n\ndungeon_id\030\004 \001(\r\022" +
+      "E\n\037weekly_boss_resin_discount_info\030\007 \001(\013" +
+      "2\034.WeeklyBossResinDiscountInfo\022\031\n\021next_r" +
+      "efresh_time\030\n \001(\r\022\032\n\022max_boss_chest_num\030" +
+      "\014 \001(\r\022\022\n\nleft_times\030\016 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1029,7 +1027,7 @@ public final class DungeonEntryInfoOuterClass {
     internal_static_DungeonEntryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonEntryInfo_descriptor,
-        new java.lang.String[] { "NextRefreshTime", "DungeonId", "WeeklyBossResinDiscountInfo", "LeftTimes", "IsPassed", "MaxBossChestNum", });
+        new java.lang.String[] { "IsPassed", "DungeonId", "WeeklyBossResinDiscountInfo", "NextRefreshTime", "MaxBossChestNum", "LeftTimes", });
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor();
   }
 

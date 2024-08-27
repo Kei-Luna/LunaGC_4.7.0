@@ -50,7 +50,7 @@ public final class ServerBuffOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code ServerBuff}
@@ -411,7 +411,7 @@ public final class ServerBuffOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code ServerBuff}

@@ -84,8 +84,8 @@ public final class PlayerDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * 4.7.0
    * CmdId: 21169
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code PlayerDataNotify}
@@ -577,8 +577,8 @@ public final class PlayerDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * 4.7.0
      * CmdId: 21169
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code PlayerDataNotify}

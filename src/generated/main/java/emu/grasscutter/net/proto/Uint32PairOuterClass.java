@@ -32,8 +32,7 @@ public final class Uint32PairOuterClass {
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * Obfs: ???
+   *4.7.0
    * </pre>
    *
    * Protobuf type {@code Uint32Pair}
@@ -312,8 +311,7 @@ public final class Uint32PairOuterClass {
     }
     /**
      * <pre>
-     * Version: 4.6.0
-     * Obfs: ???
+     *4.7.0
      * </pre>
      *
      * Protobuf type {@code Uint32Pair}
